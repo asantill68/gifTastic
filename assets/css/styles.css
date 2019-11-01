@@ -1,8 +1,22 @@
-form{
+body {
+    font-size: 25px;
+    background: #eee;
+};
+#searches {
+    width: 70%;
+};
+#search-form {
+    float: left;
+    padding: 10px;
+};
+form {
+    width: 30%;
     float: right;
-    font-size: 30px;
+    padding: 20px;
 };
-#search-input{
-    font-size: 15px;
-    background: black;
+label {
+    display: block;
 };
+/* .clearfix{
+    overflow: auto;
+}; */
