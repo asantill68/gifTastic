@@ -1,11 +1,11 @@
-body {
+/* body {
     font-size: 25px;
     background: #eee;
 };
 #searches {
     width: 70%;
 };
-#search-form {
+#search-input {
     float: left;
     padding: 10px;
 };
@@ -16,7 +16,13 @@ form {
 };
 label {
     display: block;
-};
-/* .clearfix{
-    overflow: auto;
 }; */
+
+form{
+    float: right;
+    font-size: 30px;
+};
+#search-input{
+    font-size: 30px;
+    background: black;
+};
