@@ -24,6 +24,7 @@ function populateButtons(searchArray,classToAdd,areaToAddTo){
 }
 //Set up an Ajax request using an on-click event
 $(document).on('click', '.searchButton', function(){ //Check this???
+    $('#searches').empty();
     //Create variable to capture data text from user input then test it
     var type = $(this).data('type');
     //console.log(type);
@@ -82,9 +83,10 @@ $(document).on('click', '.searchImage', function(){
 })
 //Create function that adds buttons from input
 //Create a click event on the input button class addSearch
-$('#addSearch').on('click', function(){
+$('#addSearch').on('click', function(event){
+    event.preventDefault();
     //Creaate a var that captures the input and set it to 0 followed by a val
-    var newSearch = $('input').eq(0).val();
+    var newSearch = $('input').val();
     //Add these values (push) to the array
     searchArray.push(newSearch);
     //Run the function that was previously created to add buttons with array data
