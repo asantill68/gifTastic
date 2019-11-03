@@ -30,7 +30,7 @@ $(document).on('click', '.searchButton', function(){ //Check this???
     //console.log(type);
     //Build the url using two variables q = type and apiKey
     var apiKey = 'Ya9paNnwBn8vrNUGu9bvlGXlyjWE2nCx';
-    var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + type + '&api_key=' + apiKey + '&limit=10';
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + type + '&api_key=' + apiKey + '&limit=10';
     //Build the actual ajax request using the URL and 'GET' method; Test the response for the object(s)
     $.ajax({
         url: queryURL,
