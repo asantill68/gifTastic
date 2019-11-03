@@ -5,7 +5,7 @@ $(function(){
     //console.log('Page Loaded.');
 });
 //Create array with initial values
-var searchArray = ['Long Jump', 'Snow Board', 'Curling'];
+var searchArray = ['Long jump', 'Snow board', 'Curling'];
 //Create the function to populte the html with buttons and array values, add a class and add to an area
 function populateButtons(searchArray,classToAdd,areaToAddTo){
 //Clear the area so duplicate buttons are not added
